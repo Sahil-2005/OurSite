@@ -1,0 +1,36 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Ensure sections span the full width */
+}
+
+section {
+  padding: 40px 20px;
+  width: 100%; /* Make sure sections stretch across the screen */
+  box-sizing: border-box; /* Include padding and border in size calculations */
+}
+
+.hero-section {
+  background-color: #f5a623; /* Light orange */
+  text-align: center;
+}
+
+.projects-section {
+  background-color: #4a90e2; /* Light blue */
+  text-align: center;
+}
+
+.contact-section {
+  background-color: #7ed321; /* Light green */
+  text-align: center;
+}
+
+.footer-section {
+  background-color: #9013fe; /* Purple */
+  color: white;
+  text-align: center;
+}
+
+html {
+  overflow-x: hidden;
+}
