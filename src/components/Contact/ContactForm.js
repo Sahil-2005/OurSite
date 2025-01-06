@@ -4,8 +4,11 @@ import './Contact.css';
 const ContactForm = () => {
   return (
     <section className="contact-section">
-      <h2>Let's Connect</h2>
-      <form className="contact-form">
+
+    <div className="intro-form">
+      <h2>Let' work together</h2>
+      <p>Or reach us via: <a href="sahil.com">ousite@mail.com</a></p>
+      <form className="contact-fom">
         <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input type="text" id="name" placeholder="Your Name" required />
@@ -16,6 +19,10 @@ const ContactForm = () => {
         </div>
         <button type="submit" className="submit-button">Connect</button>
       </form>
+    </div>
+    <div className="side-bar">
+      Hey
+    </div>
     </section>
   );
 };

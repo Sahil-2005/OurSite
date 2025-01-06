@@ -1,9 +1,22 @@
 .contact-section {
     padding: 40px 20px;
     /* background-color: #f9f9f9; */
-    background-color: Yellow;
+    display: flex;
+    /* justify-content: space-between; */
+    background-color: #ccc !important;
+  }
 
-    text-align: center;
+  .intro-form {
+    width: 60%;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .side-bar {
+    background-color: purple;
+    width: 40%;
   }
   
   .contact-section h2 {
