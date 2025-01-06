@@ -1,7 +1,102 @@
-.hero {
-    background-color: #282c34;
-    color: white;
-    padding: 50px;
-    text-align: center;
-  }
-  
+.landing{
+  display: flex;
+  height:100vh;
+  width: 100vw;
+  /* border: solid; */
+  position: relative;
+  top: -16%;
+  z-index: -1;
+  /* background-color: #f3f3f3; */
+  background-image: url("/hero_img.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  flex-shrink: 0;
+  /* filter: blur(8px); */
+}
+
+.left-image {
+  position: relative;
+  height: 100vh;
+  width: 50%;
+  background-image: url("/left.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 80%;
+  left: -50%; /* Initial off-screen position */
+  animation-fill-mode: forwards; /* Retain final state after animation */
+}
+
+.right-image {
+  position: relative;
+  height: 100vh;
+  width: 50%;
+  background-image: url("/right (1).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 80%;
+  right: -50%; /* Initial off-screen position */
+  animation-fill-mode: forwards; /* Retain final state after animation */
+}
+
+.left-image.slide-in-from-left {
+  animation: slideInFromLeft 1s cubic-bezier(.23,.71,.43,.75) forwards; /* Ensure forwards */
+}
+
+.right-image.slide-in-from-right {
+  animation: slideInFromRight 1s cubic-bezier(.23,.71,.43,.75) forwards; /* Ensure forwards */
+}
+
+@keyframes slideInFromLeft {
+  0% { left: -50%; }
+  100% { left: 0; } /* Final position */
+}
+
+@keyframes slideInFromRight {
+  0% { right: -50%; }
+  100% { right: 0; } /* Final position */
+}
+
+/* * {
+  outline: 1px solid red; 
+} */
+
+
+.name{
+position: absolute;
+font-family: Arial, Helvetica, sans-serif;
+top: 50%;
+left: 50%;
+transform: translate(-48%, -50%);
+text-align: center;
+z-index: 4;
+}
+
+.main-name{
+  font-size: 10vh;
+  letter-spacing: 20px;
+  font-family: 'Inter', sans-serif;
+  opacity: 80%;
+}
+
+.surname{
+  text-align: left;
+  font-size: 6vh;
+  letter-spacing: 12px;
+  /* text-decoration: underline; */
+  font-weight: 200;
+  opacity: 80%;
+}
+
+.sec-text{
+  position: absolute;
+  font-family: Helvetica, sans-serif , Arial;
+  color: #eeeeee;
+  writing-mode: vertical-rl;
+  rotate: 180deg;
+  font-size: 7vh;
+  right: 4%;
+  text-align: center;
+  bottom: 20%;
+}
+
