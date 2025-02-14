@@ -1,28 +1,29 @@
 import React from 'react';
 import './Contact.css';
+import Spline from '@splinetool/react-spline';
 
 const ContactForm = () => {
   return (
     <section className="contact-section">
+      <main>
+      <Spline scene="https://prod.spline.design/s1nY0zmHaPDUN66U/scene.splinecode" />
 
-    <div className="intro-form">
-      <h2>Let' work together</h2>
-      <p>Or reach us via: <a href="sahil.com">ousite@mail.com</a></p>
-      <form className="contact-fom">
-        <div className="form-group">
-          <label htmlFor="name">Name:</label>
-          <input type="text" id="name" placeholder="Your Name" required />
-        </div>
-        <div className="form-group">
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" placeholder="Your Email" required />
-        </div>
-        <button type="submit" className="submit-button">Connect</button>
-      </form>
-    </div>
-    <div className="side-bar">
-      Hey
-    </div>
+    </main>
+      <div className="glass-form-container">
+        <form className="glass-form">
+          <h2>Let's Connect</h2>
+          <div className="form-group">
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div className="form-group">
+            <input type="email" placeholder="Your Email" required />
+          </div>
+          <div className="form-group">
+            <textarea placeholder="Your Message" rows="4" required resize="none"></textarea>
+          </div>
+          <button type="submit" className="submit-btn">Send Message</button>
+        </form>
+      </div>
     </section>
   );
 };
